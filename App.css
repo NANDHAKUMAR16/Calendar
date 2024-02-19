@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Poppins;
+  box-sizing: border-box;
+  user-select: none;
+}
+body{
+  background-color: #555;
+}
+.calendar{
+  width: 500px;
+  background-color: #fff;
+  margin: 50px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 5px;
+}
+
+.calendar .header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: royalblue;
+  color: #fff;
+  padding: 5px;
+}
+
+button{
+  background: none;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+}
+
+select{
+  font-size: 18px;
+  padding: 0px 8px;
+  border: 1px solid royalblue;
+  border-radius: 4px;
+  margin: 0 10px;
+}
+.daysOfWeek{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  background-color: royalblue;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.days{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  gap: 10px;
+}
+.day,.empty{
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.empty{
+  background-color: #f9f9f9;
+}
+
+.day:hover{
+  background-color: rgb(82, 107, 179);
+  color: #fff;
+}
+.empty:hover{
+  background-color: tomato;
+}
